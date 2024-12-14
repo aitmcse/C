@@ -86,3 +86,31 @@ END{
 printf("The Total no of Packets Dropped due to Congestion :
 %d\n\n", count)
 }
+
+
+
+
+
+
+
+
+
+
+mkdir cn_pro
+cd cn_pro
+
+vi progl.tcl
+i
+
+<esc>:wq
+
+
+
+ns progl.tcl
+
+vi progl.awk
+i
+
+<esc>:wq 
+
+awk -f progl.awk progl.tr
